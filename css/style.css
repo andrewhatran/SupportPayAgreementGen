@@ -1,0 +1,386 @@
+/* -------------------------------------
+    FONTS
+------------------------------------- */
+@font-face {
+    font-family: Monteserrat-Semibold;
+    src: url(assets/Monteserrat-SemiBold.otf);
+}
+
+@font-face {
+    font-family: Monteserrat-Light;
+    src: url(assets/Monteserrat-Light.otf);
+}
+
+@font-face {
+    font-family: Monteserrat-UltraLight;
+    src: url(assets/Monteserrat-UltraLight.otf);
+}
+
+@font-face {
+    font-family: Monteserrat-Hairline;
+    src: url(assets/Monteserrat-Hairline.otf);
+}
+
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+* {
+  font-size: 100%;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+}
+
+/* -------------------------------------
+    BODY
+------------------------------------- */
+table.body-wrap {
+  padding: 10px;
+  max-width: 100%;
+  width: 100%;
+  background-color: #fff;
+  background-image: url("directory_bg_email.png");
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3, h4 ,h5{
+  color: #003c4b;
+  font-weight: 400;
+ max-width: 100%;
+
+}
+
+h1.semibold{
+  font-family: "Montserrat-Semibold" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-size: 45px;
+  width : 600px;
+  margin: 0 auto;
+  padding-bottom: 20pt;
+  padding-top:8pt;
+}
+
+h1.heading{
+  font-family: "Montserrat-Semibold" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-size: 49px;
+  width : 600px;
+  margin: 0 auto;
+  padding-bottom: 8pt;
+  padding-top:8pt;
+}
+
+h2 {
+  font-family: "Montserrat-Hairline" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  padding-bottom: 14pt;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Montserrat-UltraLight" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  padding-bottom: 12pt;
+  font-size: 44px;
+  line-height: 55px;
+}
+
+h3 {
+  font-family: "Montserrat-Light" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  padding-bottom: 10pt;
+  font-size: 42px;
+}
+
+h4 {
+  font-family: "Montserrat" ,  Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  padding-bottom: 8pt;
+  font-size: 30px;
+}
+
+h5 {
+  font-family: 'Open Sans'!important;
+  font-style: italic;
+  font-size: 38px;
+  width: 340pt;
+  margin: 0 auto; 
+  line-height: 45px;
+
+}
+
+p, 
+ul, 
+ol {
+  margin: 0px 25px 10px 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: #003c4b;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+p.lead{
+  font-style: italic;
+  text-align: center !important;
+}
+
+p.lead2{
+  font-style: italic;
+  text-align: left!important;
+}
+
+p.center{
+  text-align: center!important;
+}
+
+
+p.strong{
+  font-style: italic;
+   text-align: center !important;
+   font-weight: 700;
+}
+
+p.b{
+  font-style: normal !important;
+}
+
+ul li, 
+ol li {
+  margin-left: 5px;
+  list-style-position: inside;
+}
+
+hr{
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #003c4b;
+    width: 100px;
+    margin: 0 auto; 
+}
+
+hr.long{
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+hr.orange{
+  border-color: #fcba6f;
+  width: 200px;
+  border-width: 3pt;
+}
+
+.smallBreak{
+  margin-bottom: 25px;
+}
+
+.medBreak{
+  margin-bottom: 50px;
+}
+
+.longBreak{
+  margin-bottom: 100px;
+}
+
+.question{
+  font-family: "Montserrat-Light" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-size: 25px;
+  margin: 0 auto;
+  padding-bottom: 10pt;
+  padding-top:8pt;
+  width: 100%;
+  color: #506d81;
+}
+
+/* ---------------------------------------------------
+    FORM
+------------------------------------------------------ */
+
+.input-group{
+  margin-bottom: 40px;
+
+}
+
+.signup{
+  position:;
+  height: 150px;
+  width: 550px;
+  z-index: 2;
+  margin: 0 auto;
+  margin-bottom: 30%;
+
+}
+
+.signup input[type=text]{
+  border-radius: 0px !important;
+  width: 350px;
+  height: 38px;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fcba6f;
+  color: #315263;
+  font-family: "Monteserrat-Hairline", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 4px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-left:100px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+}
+
+.signup input[type=date]{
+  border-radius: 0px !important;
+  width: 350px;
+  height: 38px;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fcba6f;
+  color: #315263;
+  font-family: "Monteserrat-Semibold", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 4px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  margin-left:100px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+}
+
+.signup input[type=text]:focus{
+    border-radius: 6px !important;
+  background-color: #f7f9fb;
+
+}
+
+.signup select {
+  position: relative;
+  width: 350px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #fcba6f;
+  border-radius: 16px !important;
+  color: #fcba6f;
+  font-family: "Monteserrat-Semibold", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 4px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-left:100px;
+
+}
+
+
+
+.signup input[type=button]{
+
+  margin-left: 10px !important;
+}
+
+
+
+
+/* ---------------------------------------------------
+    BUTTONS
+------------------------------------------------------ */
+
+button.next{
+
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #fcba6f;
+    margin-top: 40px;
+    color: #fff;
+    font-family: 'Monteserrat-UltraLight', sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
+button.next:hover{
+
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #fcba6f;
+    margin-top: 40px;
+    color: #fcba6f;
+    font-family: "Monteserrat-Semibold", sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+
+/* ---------------------------------------------------
+    RESPONSIVENESS
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  clear: both !important;
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: 550px !important;
+}
+
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container {
+  padding: 10px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 200px !important;
+
+
+  text-align: center;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+  width: 100%;
+}
+
+/* ---------------------------------------------------
+    IMAGES
+------------------------------------------------------ */
+ @media only screen and (max-width: 400px){
+    img{
+          height:auto !important;
+          max-width:300px !important;
+          width: 100% !important;
+        }
+    }
