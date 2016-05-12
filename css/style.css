@@ -3,22 +3,22 @@
 ------------------------------------- */
 @font-face {
     font-family: Monteserrat-Semibold;
-    src: url(assets/Monteserrat-SemiBold.otf);
+    src: url(../assets/Monteserrat-SemiBold.otf);
 }
 
 @font-face {
     font-family: Monteserrat-Light;
-    src: url(assets/Monteserrat-Light.otf);
+    src: url(../assets/Monteserrat-Light.otf);
 }
 
 @font-face {
     font-family: Monteserrat-UltraLight;
-    src: url(assets/Monteserrat-UltraLight.otf);
+    src: url(../assets/Monteserrat-UltraLight.otf);
 }
 
 @font-face {
     font-family: Monteserrat-Hairline;
-    src: url(assets/Monteserrat-Hairline.otf);
+    src: url(../assets/Monteserrat-Hairline.otf);
 }
 
 /* -------------------------------------
@@ -125,7 +125,7 @@ h5 {
 p, 
 ul, 
 ol {
-  margin: 0px 25px 10px 25px;
+/*  margin: 0px 25px 10px 25px;*/
   font-family: 'Open Sans', sans-serif;
   color: #003c4b;
   font-size: 22px;
@@ -201,60 +201,63 @@ hr.orange{
 
 .question{
   font-family: "Montserrat-Light" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-  font-size: 22px;
+  font-size: 24px;
+/*  margin: 0 auto !important;
+*/ 
   margin: 0 auto;
-  padding-bottom: 8pt;
+   padding-bottom: 8pt;
   padding-top:6pt;
-  width: 100%;
   color: #506d81;
+  text-align: center !important;
+  width: 550px;
 }
 
 /* ---------------------------------------------------
     FORM
 ------------------------------------------------------ */
 
+.form-control{
+
+}
+
 .input-group{
-  margin-bottom: 30px;
 
 }
 
 .signup{
-  position:;
-  height: 150px;
+/*  height: 150px;
   width: 550px;
   z-index: 2;
   margin: 0 auto;
-  margin-bottom: 30%;
+  margin-bottom: 30%;*/
 
 }
 
 .signup input[type=text]{
-  border-radius: 0px !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  position: relative;
   width: 350px;
   height: 38px;
-  background: transparent;
+  margin: 5px auto 42px auto !important;
+  border-radius: 0px !important;
   border: 0px;
   border-bottom: 2px solid #fcba6f;
   color: #315263;
-  font-family: "Monteserrat-Hairline", sans-serif;
-  font-size: 18px;
-  text-align: center;
-  padding-top: 4px;
-  letter-spacing: 2px;
-  margin-top: 5px;
-  margin-left:100px;
-  margin-bottom: 12px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+   background: transparent;
   background-image: url('../assets/pencil.svg');
   background-size: 23px 23px;
   background-repeat: no-repeat;
-  background-position: 2% 45%;}
+  background-position: 1% 45%;}
 }
 
 .signup input[type=date]{
   border-radius: 0px !important;
-  width: 350px;
+  width: 300px;
   height: 38px;
   background: transparent;
   border: 0px;
@@ -266,7 +269,6 @@ hr.orange{
   padding-top: 4px;
   letter-spacing: 2px;
   margin-top: 5px;
-  margin-left:100px;
   margin-bottom: 12px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
@@ -284,7 +286,7 @@ hr.orange{
 
 .signup select {
   position: relative;
-  width: 350px;
+  width: 380px;
   height: 50px;
   background: transparent;
   border: 1px solid #fcba6f;
@@ -293,11 +295,11 @@ hr.orange{
   font-family: "Monteserrat-Semibold", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  text-align: center;
+  text-align-last: center;
   padding-top: 4px;
   letter-spacing: 2px;
   margin-top: 10px;
-  margin-left:100px;
+  margin: 10px auto;
     -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -314,12 +316,19 @@ hr.orange{
   display: none;
 }
 
+.signup select:hover{
+   outline: none !important;
+   border: 1px solid #fcba6f;
+  border-radius: 16px !important;
+ -webkit-box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .08) !important;
+          box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .08) !important;
+}
 .signup select:focus{
    outline: none !important;
    border: 1px solid #fcba6f;
   border-radius: 16px !important;
-  -webkit-box-shadow:  2 6px 6px rgba(1, 1, 1, .30) !important;
-          box-shadow:  2 6px 6px rgba(1, 1, 1, .30) !important;
+ -webkit-box-shadow:  inset 0px 0px 20px 1px rgba(0, 0, 0, .0) !important;
+          box-shadow:  inset 0px 0px 20px 1px rgba(0, 0, 0, .0) !important;
 }
 
 
@@ -333,7 +342,8 @@ button.next{
     height: 60px;
     margin: 0 auto;
     background-color: #fcba6f;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     color: #fff;
     font-family: 'Monteserrat-UltraLight', sans-serif !important;
     font-size: 20px;
@@ -350,7 +360,8 @@ button.next:hover{
     margin: 0 auto;
     background-color: #fff;
     border: 1px solid #fcba6f;
-    margin-top: 40px;
+    margin-top: 20px;
+        margin-bottom: 40px;
     color: #fcba6f;
     font-family: "Monteserrat-Semibold", sans-serif !important;
     font-size: 20px;
@@ -358,6 +369,61 @@ button.next:hover{
     letter-spacing: 3px;
     text-align: center;
 }
+
+/* ---------------------------------------------------
+    RADIO
+------------------------------------------------------ */
+
+
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+    padding-bottom: 40px;
+
+}
+
+.profile-userbuttons .btn1 {
+  font-family: "Montserrat-Light" !important;
+  color: #315263;
+  font-size: 28px;
+  margin-right: 20px;
+  background-color: #fff;
+  height: 100px;
+  width: 240px;
+   border-width: 0px;
+  padding-top: 10px;
+
+}
+
+
+.profile-userbuttons .btn1 h1 {
+  font-family: "Montserrat-Light" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-size: 15px;
+  color: #a5a9ac;
+  margin-top: 20px;
+}
+
+
+.profile-userbuttons .btn1:hover {
+  text-align: center;
+   background-color: #fff;
+    color: #fcba6f;
+  border: 1.5px solid #fcba6f;
+
+
+}
+
+.profile-userbuttons .btn1:focus {
+  color: #fcba6f;
+   -webkit-box-shadow:  0px 0px 35px 10px rgba(0, 0, 0, .08) !important;
+        box-shadow:  0px 0px 35px 10px rgba(0, 0, 0, .08) !important;
+}
+
+
+
+
+button:focus {outline:0;}
 
 
 
