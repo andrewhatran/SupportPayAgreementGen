@@ -4,8 +4,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="400px" height="143.993px" viewBox="0 0 400 143.993" enable-background="new 0 0 400 143.993" xml:space="preserve">
 <g>
-	<circle fill="none" stroke="#FCBA70" stroke-width="16.231" stroke-miterlimit="10" cx="200" cy="71.997" r="40.537"/>
-	<circle fill="none" stroke="#FCBA70" stroke-width="16.231" stroke-miterlimit="10" cx="334.961" cy="71.997" r="40.537"/>
-	<circle fill="none" stroke="#FCBA70" stroke-width="16.231" stroke-miterlimit="10" cx="65.038" cy="71.997" r="40.536"/>
+	<circle fill="none" stroke="#FCBA70" stroke-width="12.165" stroke-miterlimit="10" cx="200" cy="71.996" r="30.382"/>
+	<circle fill="none" stroke="#FCBA70" stroke-width="12.165" stroke-miterlimit="10" cx="344.693" cy="71.996" r="30.382"/>
+	<circle fill="none" stroke="#FCBA70" stroke-width="12.165" stroke-miterlimit="10" cx="55.306" cy="71.996" r="30.381"/>
 </g>
 </svg>
