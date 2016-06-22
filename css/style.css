@@ -62,6 +62,11 @@ table.body-wrap {
 /* -------------------------------------
     TYPOGRAPHY
 ------------------------------------- */
+p{
+  color: #506d81 !important;
+}
+
+
 h1, h2, h3, h4 ,h5{
   color: #003c4b;
   font-weight: 400;
@@ -124,11 +129,13 @@ h5 {
 
 p, 
 ul, 
-ol {
+ol
+{
 /*  margin: 0px 25px 10px 25px;*/
   font-family: 'Open Sans', sans-serif;
-  color: #003c4b;
-  font-size: 22px;
+   color: #506d81 !important;
+    color: #506d81 !important;
+  font-size: 21px;
   font-weight: normal;
   margin-bottom: 10px;
   text-align: center;
@@ -202,7 +209,7 @@ hr.orange{
 
 .question{
   font-family: "Montserrat-Light" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
-  font-size: 24px;
+  font-size: 21px;
 /*  margin: 0 auto !important;
 */ 
   margin: 0 auto;
@@ -212,6 +219,34 @@ hr.orange{
   text-align: center !important;
   width: 550px;
 }
+
+.tag{
+   font-family:  "Montserrat-Light", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    margin-top: 12px !important;
+    padding-left: 10px;
+    color: #fcba6f !important;  /*orange*/
+   /* color: #506d81 !important; */   /*gray*/
+/*    color: #d5d4d3;*/
+    font-size: 21px;
+    letter-spacing: 0px;
+    padding-top: 10px;
+}
+
+.tag-big{
+   font-family: "Montserrat-Semibold" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    margin-top: 12px !important;
+    padding-left: 10px;
+    color: #fcba6f !important;
+    font-size: 24px;
+    letter-spacing: 0px;
+    padding-top: 10px;
+}
+
+.halfBreak{
+  margin-bottom:-40px;
+}
+
+
 /* ---------------------------------------------------
     LINKS
 ------------------------------------------------------ */
@@ -251,7 +286,8 @@ hr.orange{
   border-radius: 0px !important;
   border: 0px;
   border-bottom: 2px solid #fcba6f;
-  color: #315263;
+/*  color: #315263;*/
+  color: #506d81;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
    background: transparent;
@@ -259,7 +295,56 @@ hr.orange{
   background-size: 23px 23px;
   background-repeat: no-repeat;
   background-position: 1% 45%;}
+
+
+.short input[type=text]{
+  /*display: inline;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  position: relative;
+  width: 150px;
+  height: 38px;
+  margin: 10px auto 42px auto !important;
+  border-radius: 0px !important;
+  border: 0px;
+  border-bottom: 2px solid #fcba6f;
+  color: #506d81;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+   background: transparent;
+  background-image: url('../assets/pencil.svg');
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position: 1% 45%;}
+
+  .short-inline input[type=text]{
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  position: relative;
+  width: 100px;
+  height: 38px;
+/*  margin: 5px auto 42px auto !important;*/
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-top:14px;
+  border-radius: 0px !important;
+  border: 0px;
+  border-bottom: 2px solid #fcba6f;
+  color: #506d81;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .00) !important;
+ /*  background: transparent;
+  background-image: url('../assets/pencil.svg');
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position: 1% 45%;*/
 }
+
 
 .signup input[type=date]{
   border-radius: 0px !important;
@@ -285,10 +370,72 @@ hr.orange{
   /*background-color: #f7f9fb;*/
     background-image: url('../assets/pencilOrange.svg');
     -webkit-box-shadow:  0px 0px 30px 10px rgba(0, 0, 0, .08) !important;
-          box-shadow:  0px 0px 30px 10px rgba(0, 0, 0, .08) !important;
+          box-shadow:  0px 0px 30px 10px rgba(0, 0, 0, .08) !important
+}
 
+.short input[type=text]:focus{
+    border-radius: 6px !important;
+  /*background-color: #f7f9fb;*/
+    background-image: url('../assets/pencilOrange.svg');
+    -webkit-box-shadow:  0px 0px 30px 10px rgba(0, 0, 0, .08) !important;
+          box-shadow:  0px 0px 30px 10px rgba(0, 0, 0, .08) !important
+}
+
+.short-inline input[type=text]:focus{
+    border-radius: 6px !important;
+  /*background-color: #f7f9fb;*/
+
+    -webkit-box-shadow:  0px 0px 30px 10px rgba(0, 0, 0, .08) !important;
+          box-shadow:  0px 0px 30px 10px rgba(0, 0, 0, .08) !important
+}
+
+.short-inline select{
+  display: inline;
+  position: relative;
+  width: 140px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #fcba6f;
+  border-radius: 16px !important;
+  color: #fcba6f;
+  font-family: "Monteserrat-Semibold", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align-last: center;
+  padding-top: 4px;
+  padding-bottom: 0px !important;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-left:10px;
+  /*margin: 10px auto;*/
+     -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
 }
+
+.long-select select{
+    position: relative;
+  width: 600px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #fcba6f;
+  border-radius: 16px !important;
+  color: #fcba6f;
+  font-family: "Monteserrat-Semibold", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align-last: center;
+  padding-top: 4px;
+  padding-bottom: 0px !important;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin: 10px auto;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 
 .signup select {
   position: relative;
@@ -395,13 +542,13 @@ input[type=radio]{
     font-family: "Montserrat-Light" !important;
     font-weight: 400;
     color: #315263;
-    font-size: 28px;
+    font-size: 19px;
     margin-right: 20px;
     background-color: #fff;
     height: 100px;
-    width: 240px;
+    width: 300px;
     border-width: 0px;
-    padding-top: 10px;
+    padding-top: 15px;
     position: 100px !important;
      border: 1px solid #fff;
 
@@ -415,16 +562,11 @@ label:hover{
     max-height: 100px !important;
 }
 
-input:focus + label{
-    color: #fcba6f;
-     -webkit-box-shadow:  0px 0px 35px 10px rgba(0, 0, 0, .08) !important;
-        box-shadow:  0px 0px 35px 10px rgba(0, 0, 0, .08) !important;
-}
 
 input:checked + label{
     color: #fcba6f;
-     -webkit-box-shadow:  0px 0px 35px 10px rgba(0, 0, 0, .08) !important;
-        box-shadow:  0px 0px 35px 10px rgba(0, 0, 0, .08) !important;
+     -webkit-box-shadow:  0px 0px 35px 14px rgba(0, 0, 0, .08) !important;
+        box-shadow:  0px 0px 35px 14px rgba(0, 0, 0, .08) !important;
 }
 
 label h1{

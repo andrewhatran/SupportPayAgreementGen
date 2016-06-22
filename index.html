@@ -50,31 +50,30 @@
                   <div class="medBreak"></div>
             </div>
 
-            <!-- Text Inputs-->
              <A NAME="two">  </a>
              <div class="text-segment">
-                  <h1 class="semibold">Text Inputs</h1>
+                  <!-- <h1 class="semibold">Text Inputs</h1> -->
                   <hr class="orange">
                   <div class="signup">
                         <form name="myform">
-                             <p class="question"> Please enter the Parent's full name.</p>
-                             <input type="text" class="form-control" name="un">
+                             <p class="question"> Please enter the Mother's full name.</p>
+                             <input type="text" class="form-control">
 
                               <p class="question"> Please enter the Father's full name.</p>
-                              <input type="text" class="form-control" name="pw">
+                              <input type="text" class="form-control">
                           
                               <p class="question"> Please enter the Child's full name.</p>
-                              <input type="text" class="form-control" type="date" name="is">
+                              <input type="text" class="form-control" type="date" >
                         </form>
                     <a href="#three" class="smoothScroll"><button type="button" class="btn next">Next</button></a>
                   </div>   
                  <div class="smallBreak"></div>
             </div>
-            
-             <!-- Selection Inputs-->
+
               <A NAME="three"></a>
               <div class="text-segment">
-                    <h1 class="semibold">Selection Inputs</h1>
+                    <!-- <h1 class="semibold">Selection Inputs</h1> -->
+
                     <hr class="orange">
                     <div class="signup">
                           <p class="question"> What type of physical custody does the Mother have over the Child?</p>
@@ -83,7 +82,14 @@
                               <option value="1">Primary</option>
                               <option value="0">Shared</option>
                           </select><br><br>
-                    </div> 
+                    </div>
+                
+                      <div class="short">
+                        <span class="question"> For how many days per week?</span>
+                        <input type="text" class="form-control">
+                      </div> 
+
+
                      <div class="signup">
                           <p class="question"> What is the agreed payment period?</p>
                           <select class="form-control" id="select">
@@ -91,41 +97,138 @@
                               <option value="1">Biweekly</option>
                               <option value="0">Monthly</option>
                           </select><br><br>
-                         <a href="#four" class="smoothScroll"> <button type="button" class="btn next">Next</button></a>
-                    </div> 
+
+                    </div>
+
+                     <div class="short">
+                        <span class="question"> For how many days per week?</span>
+                        <input type="text" class="form-control">
+                      </div>  
+
+                      <div class="short-inline">
+                          <p>In the case of relocation of one or more Parent, at what distance (either in miles/hours) would both Parents consider to be far enough to reconsider the Child's permanent residence?</p>
+                          <input type="text" class="form-control">
+                          <select class="form-control" id="select">
+                              <option value="2" >Miles</option>
+                              <option value="1">Hours</option>
+                          </select>
+                          <br><br>
+                      </div>
+
+
+
+                     <a href="#four" class="smoothScroll"> <button type="button" class="btn next">Next</button></a>
               </div>
 
-              <!-- Radio Inputs-->
+
             <A NAME="four"></a>
-            <h1 class="semibold">Radio Inputs</h1>
+<!--             <h1 class="semibold">Radio Inputs</h1> -->
             <hr class="orange">
-            <div class="signup">
-               <p class="question"> Which option do you choose?</p>
-               <img src="assets/options.svg" width= "60"/><br><br>
-   
+            <div class="short-inline">
+               <p>How much does an item for the Child need to be worth in order to be considered to be a Big Ticket item (i.e. Laptop, automobile, etc.) ?</p>
+               <span class = "tag"> Greater than </span>
+               <span class = "tag-big"> $ </span>
+               <input type="text" class="form-control">
+            </div>   
+
+            <div class="short-inline">
+               <p class = "question">What % of medical/dental/vision costs will each Parent cover? </p>
+              <div class=halfBreak>
+                <span class = "tag"> Mother : </span>
+                 <input type="text" class="form-control">
+                 <span class = "tag-big"> % </span>
+              </div>
+              <div>
+                 <span class = "tag">Father : </span>
+                 <input type="text" class="form-control">
+                 <span class = "tag-big"> % </span>
+              </div>
+            </div>   
+
+            <div class = "long-select">
+               <p>In the case that a medical/dental/optical device/tool was damaged or broken and requires repair and/or replacement, how will the costs be distributed?</p>
                 <div class="radio-inputs">
                     <input id="option1" type="radio" name="field" value="option1">
-                    <label for="option1">Option One <h1>  Description for option one. </h1></label>
+                    <label for="option1">Shared Evenly<h1>  by both Parents. </h1></label>
 
                      <input id="option2" type="radio" name="field" value="option2">
-                    <label for="option2">Option One <h1>  Description for option one. </h1></label>
+                    <label for="option2">Paid by the Custodial Parent <h1>  at the time of the loss
+                    or breakage</h1></label>
 
-                     <input id="option3" type="radio" name="field" value="option3">
-                    <label for="option3">Option One <h1>  Description for option one. </h1></label>
                 </div>
-             <br><br>
+                <br><br><br>
+                <!-- <select class="form-control" id="select">
+                    <option value="2" >Shared evenly by both Parents</option>
+                    <option value="1">Paid by the custodial Parent<br> at the time of the loss
+                    or breakage</option>
+                 </select><br><br> -->
+            </div>
 
+            <div class = "short-inline">
+               <p>How much life insurance (with the Child as the sole beneficiary) will the Parents agree to purchase?</p>
+                <span class = "tag-big"> $ </span>
+               <input type="text" class="form-control">
+            </div>
 
-               <button type="button" class="btn next">Next</button>
+            <div class = "signup">
+               <p class = "question">Which state in the U.S. will this agreement be made?</p>
+                    <select class="form-control">
+                          <option value="AL">Alabama</option>
+                          <option value="AK">Alaska</option>
+                          <option value="AZ">Arizona</option>
+                          <option value="AR">Arkansas</option>
+                          <option value="CA">California</option>
+                          <option value="CO">Colorado</option>
+                          <option value="CT">Connecticut</option>
+                          <option value="DE">Delaware</option>
+                          <option value="DC">District Of Columbia</option>
+                          <option value="FL">Florida</option>
+                          <option value="GA">Georgia</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="ID">Idaho</option>
+                          <option value="IL">Illinois</option>
+                          <option value="IN">Indiana</option>
+                          <option value="IA">Iowa</option>
+                          <option value="KS">Kansas</option>
+                          <option value="KY">Kentucky</option>
+                          <option value="LA">Louisiana</option>
+                          <option value="ME">Maine</option>
+                          <option value="MD">Maryland</option>
+                          <option value="MA">Massachusetts</option>
+                          <option value="MI">Michigan</option>
+                          <option value="MN">Minnesota</option>
+                          <option value="MS">Mississippi</option>
+                          <option value="MO">Missouri</option>
+                          <option value="MT">Montana</option>
+                          <option value="NE">Nebraska</option>
+                          <option value="NV">Nevada</option>
+                          <option value="NH">New Hampshire</option>
+                          <option value="NJ">New Jersey</option>
+                          <option value="NM">New Mexico</option>
+                          <option value="NY">New York</option>
+                          <option value="NC">North Carolina</option>
+                          <option value="ND">North Dakota</option>
+                          <option value="OH">Ohio</option>
+                          <option value="OK">Oklahoma</option>
+                          <option value="OR">Oregon</option>
+                          <option value="PA">Pennsylvania</option>
+                          <option value="RI">Rhode Island</option>
+                          <option value="SC">South Carolina</option>
+                          <option value="SD">South Dakota</option>
+                          <option value="TN">Tennessee</option>
+                          <option value="TX">Texas</option>
+                          <option value="UT">Utah</option>
+                          <option value="VT">Vermont</option>
+                          <option value="VA">Virginia</option>
+                          <option value="WA">Washington</option>
+                          <option value="WV">West Virginia</option>
+                          <option value="WI">Wisconsin</option>
+                          <option value="WY">Wyoming</option>
+                        </select> 
+            </div><br><br><br>
 
-
+               <button type="button" class="btn next">Done</button>
             </div> 
- 
-            
-            <br><br><br><br>
-
-
-
           </td>
         </tr>
       </table>
