@@ -1,246 +1,235 @@
 <!doctype html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600,400,600italic,700,700italic' rel='stylesheet' type='text/css'><meta name="viewport" content="width=device-width">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/style.css" />
-<title>SupportPay Agreement Generator</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/smoothscroll.js"></script>
-
-
-
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,600,400,600italic,700,700italic' rel='stylesheet' type='text/css'><meta name="viewport" content="width=device-width">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SupportPay Agreement Generator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
 </head>
 
-
-
 <body>
+  <!-- content -->
+  <div class="content">
+  <table>
+    <tr>
+      <td>
+      <form id="demo" method="get">
 
-<!-- body -->
-<table class="body-wrap" >
-  <tr>
-    <td></td>
-    <td >
-
-      <!-- content -->
-      <div class="content">
-      <table>
-        <tr>
-          <td>
-
-            <!-- Introduction-->
-            <div class="intro-segment">
-                  <img src="assets/shield_logo.svg" width= "140"/>
-                  <br>
-                  <br>
-                  <A NAME="one"></a>
-                  <div class-"header">
-                  <h1 class="heading">Agreement Generator</h1>
-                    <img src="assets/checkboxLine.svg" width= "180"/>
-                  <br><br><br>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p><br> <br>
-                   <a href="#two" class="smoothScroll"><button type="button" class="btn next">Start</button></a>
-                  <br><br><br>
-                  </div>
-                  <img src="assets/dotline.svg" class = "smallBreak" width= "450"/>
-                  <div class="medBreak"></div>
+        <!-- Introduction-->
+        <div>
+            <img src="assets/shield_logo.svg" width= "140"/>
+            <br>
+            <br>
+            <A NAME="one"></a>
+            <div class-"header">
+            <h1 class="heading">Agreement Generator</h1>
+              <img src="assets/checkboxLine.svg" width= "180"/>
+            <br><br><br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p><br> <br>
+             <a href="#two" class="smoothScroll"><button type="button" class="btn next">Start</button></a>
+            <br><br><br>
             </div>
+            <img src="assets/dotline.svg" class = "smallBreak" width= "450"/>
+            <div class="medBreak"></div>
+        </div>
 
-             <A NAME="two">  </a>
-             <div class="text-segment">
-                  <!-- <h1 class="semibold">Text Inputs</h1> -->
-                  <hr class="orange">
-                  <div class="signup">
-                        <form name="myform">
-                             <p class="question"> Please enter the Mother's full name.</p>
-                             <input type="text" class="form-control">
+        <!-- Names-->
+         <A NAME="two">  </a>
+         <div>
+              <!-- <h1 class="semibold">Text Inputs</h1> -->
+              <div class="signup"> 
+                         <p class="question"> Please enter the Mother's full name.</p>
+                         <input type="text" class="form-control" name="mother-name">
 
-                              <p class="question"> Please enter the Father's full name.</p>
-                              <input type="text" class="form-control">
-                          
-                              <p class="question"> Please enter the Child's full name.</p>
-                              <input type="text" class="form-control" type="date" >
-                        </form>
-                    <a href="#three" class="smoothScroll"><button type="button" class="btn next">Next</button></a>
-                  </div>   
-                 <div class="smallBreak"></div>
-            </div>
+                          <p class="question"> Please enter the Father's full name.</p>
+                          <input type="text" class="form-control" name="father-name">
+                      
+                          <p class="question"> Please enter the Child's full name.</p>
+                          <input type="text" class="form-control" name="child-name">
+  
+                <a href="#three" class="smoothScroll"><button type="button" class="btn next">Next</button></a>
+              </div>   
+             <div class="smallBreak"></div>
+        </div>
 
-              <A NAME="three"></a>
-              <div class="text-segment">
-                    <!-- <h1 class="semibold">Selection Inputs</h1> -->
-
-                    <hr class="orange">
-                    <div class="signup">
-                          <p class="question"> What type of physical custody does the Mother have over the Child?</p>
-                          <select class="form-control" id="select">
-                              <option value="2" >Sole</option>
-                              <option value="1">Primary</option>
-                              <option value="0">Shared</option>
-                          </select><br><br>
-                    </div>
-                
-                      <div class="short">
-                        <span class="question"> For how many days per week?</span>
-                        <input type="text" class="form-control">
-                      </div> 
-
-
-                     <div class="signup">
-                          <p class="question"> What is the agreed payment period?</p>
-                          <select class="form-control" id="select">
-                              <option value="2" >Weekly</option>
-                              <option value="1">Biweekly</option>
-                              <option value="0">Monthly</option>
-                          </select><br><br>
-
-                    </div>
-
-                     <div class="short">
-                        <span class="question"> For how many days per week?</span>
-                        <input type="text" class="form-control">
-                      </div>  
-
-                      <div class="short-inline">
-                          <p>In the case of relocation of one or more Parent, at what distance (either in miles/hours) would both Parents consider to be far enough to reconsider the Child's permanent residence?</p>
-                          <input type="text" class="form-control">
-                          <select class="form-control" id="select">
-                              <option value="2" >Miles</option>
-                              <option value="1">Hours</option>
-                          </select>
-                          <br><br>
-                      </div>
-
-
-
-                     <a href="#four" class="smoothScroll"> <button type="button" class="btn next">Next</button></a>
-              </div>
-
-
-            <A NAME="four"></a>
-<!--             <h1 class="semibold">Radio Inputs</h1> -->
-            <hr class="orange">
-            <div class="short-inline">
-               <p>How much does an item for the Child need to be worth in order to be considered to be a Big Ticket item (i.e. Laptop, automobile, etc.) ?</p>
-               <span class = "tag"> Greater than </span>
-               <span class = "tag-big"> $ </span>
-               <input type="text" class="form-control">
-            </div>   
-
-            <div class="short-inline">
-               <p class = "question">What % of medical/dental/vision costs will each Parent cover? </p>
-              <div class=halfBreak>
-                <span class = "tag"> Mother : </span>
-                 <input type="text" class="form-control">
-                 <span class = "tag-big"> % </span>
-              </div>
-              <div>
-                 <span class = "tag">Father : </span>
-                 <input type="text" class="form-control">
-                 <span class = "tag-big"> % </span>
-              </div>
-            </div>   
-
-            <div class = "long-select">
-               <p>In the case that a medical/dental/optical device/tool was damaged or broken and requires repair and/or replacement, how will the costs be distributed?</p>
-                <div class="radio-inputs">
-                    <input id="option1" type="radio" name="field" value="option1">
-                    <label for="option1">Shared Evenly<h1>  by both Parents. </h1></label>
-
-                     <input id="option2" type="radio" name="field" value="option2">
-                    <label for="option2">Paid by the Custodial Parent <h1>  at the time of the loss
-                    or breakage</h1></label>
-
+        <!-- Custody-->
+        <A NAME="three"></a>
+        <div>
+                <!-- <h1 class="semibold">Selection Inputs</h1> -->
+                <hr class="orange">
+                <div class="signup">
+                      <p class="question"> What type of custody will the Mother have?</p>
+                      <select class="form-control" name="mother-custody">
+                          <option value="Sole" >Sole</option>
+                          <option value="Primary">Primary</option>
+                          <option value="Shared">Shared</option>
+                      </select><br><br>
                 </div>
-                <br><br><br>
-                <!-- <select class="form-control" id="select">
-                    <option value="2" >Shared evenly by both Parents</option>
-                    <option value="1">Paid by the custodial Parent<br> at the time of the loss
-                    or breakage</option>
-                 </select><br><br> -->
+            
+                  <div class="short">
+                    <span class="question"> For how many days per week?</span>
+                    <input type="text" class="form-control" name="mother-custody-days">
+                  </div> 
+
+                 <div class="signup">
+                      <p class="question"> What type of custody will the Father have?</p>
+                      <select class="form-control" name="father-custody">
+                          <option value="Sole" >Sole</option>
+                          <option value="Primary">Primary</option>
+                          <option value="Shared">Shared</option>
+                      </select><br><br>
+                </div>
+
+                 <div class="short">
+                    <span class="question"> For how many days per week?</span>
+                    <input type="text" class="form-control" name="father-custody-days">
+                  </div>  
+
+                  <!-- Relocation-->
+                  <div class="short-inline">
+                      <p>In the case of relocation of one or more Parent, at what distance (either in miles/hours) would both Parents consider to be far enough to reconsider the Child's permanent residence?</p>
+                      <input type="text" class="form-control" name="relocation-distance">
+                      <select class="form-control" id="select" name="relocation-distance-type">
+                          <option value="2" >Miles</option>
+                          <option value="1">Hours</option>
+                      </select>
+                      <br><br>
+                  </div>
+
+                 <a href="#four" class="smoothScroll"> <button type="button" class="btn next">Next</button></a>
+          </div>
+
+
+        <A NAME="four"></a>
+        <div>
+          <hr class="orange">
+          <div class="short-inline">
+             <p>How much does an item for the Child need to be worth in order to be considered to be a Big Ticket item (i.e. Laptop, automobile, etc.) ?</p>
+             <span class = "tag"> Greater than </span>
+             <span class = "tag-big"> $ </span>
+             <input type="text" class="form-control" name="big-ticket">
+          </div>   
+
+          <div class="short-inline">
+             <p class = "question">What % of medical/dental/vision costs will each Parent cover? </p>
+            <div class=halfBreak>
+              <span class = "tag"> Mother : </span>
+               <input type="text" class="form-control" name="mother-medical">
+               <span class = "tag-big"> % </span>
             </div>
-
-            <div class = "short-inline">
-               <p>How much life insurance (with the Child as the sole beneficiary) will the Parents agree to purchase?</p>
-                <span class = "tag-big"> $ </span>
-               <input type="text" class="form-control">
+            <div>
+               <span class = "tag">Father : </span>
+               <input type="text" class="form-control" name="father-medical">
+               <span class = "tag-big"> % </span>
             </div>
+          </div>   
 
-            <div class = "signup">
-               <p class = "question">Which state in the U.S. will this agreement be made?</p>
-                    <select class="form-control">
-                          <option value="AL">Alabama</option>
-                          <option value="AK">Alaska</option>
-                          <option value="AZ">Arizona</option>
-                          <option value="AR">Arkansas</option>
-                          <option value="CA">California</option>
-                          <option value="CO">Colorado</option>
-                          <option value="CT">Connecticut</option>
-                          <option value="DE">Delaware</option>
-                          <option value="DC">District Of Columbia</option>
-                          <option value="FL">Florida</option>
-                          <option value="GA">Georgia</option>
-                          <option value="HI">Hawaii</option>
-                          <option value="ID">Idaho</option>
-                          <option value="IL">Illinois</option>
-                          <option value="IN">Indiana</option>
-                          <option value="IA">Iowa</option>
-                          <option value="KS">Kansas</option>
-                          <option value="KY">Kentucky</option>
-                          <option value="LA">Louisiana</option>
-                          <option value="ME">Maine</option>
-                          <option value="MD">Maryland</option>
-                          <option value="MA">Massachusetts</option>
-                          <option value="MI">Michigan</option>
-                          <option value="MN">Minnesota</option>
-                          <option value="MS">Mississippi</option>
-                          <option value="MO">Missouri</option>
-                          <option value="MT">Montana</option>
-                          <option value="NE">Nebraska</option>
-                          <option value="NV">Nevada</option>
-                          <option value="NH">New Hampshire</option>
-                          <option value="NJ">New Jersey</option>
-                          <option value="NM">New Mexico</option>
-                          <option value="NY">New York</option>
-                          <option value="NC">North Carolina</option>
-                          <option value="ND">North Dakota</option>
-                          <option value="OH">Ohio</option>
-                          <option value="OK">Oklahoma</option>
-                          <option value="OR">Oregon</option>
-                          <option value="PA">Pennsylvania</option>
-                          <option value="RI">Rhode Island</option>
-                          <option value="SC">South Carolina</option>
-                          <option value="SD">South Dakota</option>
-                          <option value="TN">Tennessee</option>
-                          <option value="TX">Texas</option>
-                          <option value="UT">Utah</option>
-                          <option value="VT">Vermont</option>
-                          <option value="VA">Virginia</option>
-                          <option value="WA">Washington</option>
-                          <option value="WV">West Virginia</option>
-                          <option value="WI">Wisconsin</option>
-                          <option value="WY">Wyoming</option>
-                        </select> 
-            </div><br><br><br>
+          <div class = "long-select">
+             <p>In the case that a medical/dental/optical device/tool was damaged or broken and requires repair and/or replacement, how will the costs be distributed?</p>
+              <select name="replace-device">
+                    <option value="shared evenly by both Parents.">Shared evenly by both Parents</option>
+                    <option value="paid by the custodial Parent at the time of the loss or breakage.">Paid by the custodial Parent at the time of the loss or breakage</option>
+              </select>
+<!--               <div class="radio-inputs">
+                  <input id="option1" type="radio" name="field" value="option1">
+                  <label for="option1">Shared Evenly<h1>  by both Parents. </h1></label>
 
-               <button type="button" class="btn next">Done</button>
-            </div> 
-          </td>
-        </tr>
-      </table>
+                   <input id="option2" type="radio" name="field" value="option2">
+                  <label for="option2">Paid by the Custodial Parent <h1>  at the time of the loss
+                  or breakage</h1></label>
+
+              </div> -->
+              <br><br><br>
+          </div>
+        <a href="#five" class="smoothScroll"> <button type="button" class="btn next">Next</button></a>
       </div>
-      <!-- /content -->
-      
-    </td>
-    <td></td>
-  </tr>
-</table>
-<!-- /body -->
 
+      <A NAME="five"></a>
+      <div>
+        <hr class="orange">
+        <div class = "short-inline">
+           <p>How much life insurance (with the Child as the sole beneficiary) will the Parents agree to purchase?</p>
+            <span class = "tag-big"> $ </span>
+           <input type="text" class="form-control" name="life-insurance">
+        </div>
+
+        <div class = "signup">
+           <p class = "question">Which state in the U.S. will this agreement be made?</p>
+                <select class="form-control">
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="DC">District Of Columbia</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </select> 
+        </div>
+        </div>
+        <br><br><br>
+
+           <button type="submit" class="btn next">Done</button>
+        </form>
+        </div> 
+      </td>
+    </tr>
+  </table>
+  </div>
+  <!-- /content -->
+      
+   <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jspdf.min.js"></script>
+    <script type="text/javascript" src="js/basic_agreement.js"></script>
 
 
 </body>

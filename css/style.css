@@ -28,6 +28,8 @@
   font-size: 100%;
   line-height: 1.6em;
   margin: 0;
+
+  font-size: 21px;
 }
 
 img {
@@ -190,9 +192,9 @@ hr.long{
 
 hr.orange{
   border-color: #fcba6f;
-  width: 100px;
-  border-width: 4pt;
-   padding-bottom: 40px;
+  width: 600px;
+  border-width: .5pt;
+   padding-bottom: 80px;
 }
 
 .smallBreak{
@@ -275,12 +277,12 @@ hr.orange{
 }
 
 .signup input[type=text]{
-  font-family: 'Open Sans', sans-serif;
+ font-family: "Montserrat-Light" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   font-size: 18px;
   text-align: center;
   letter-spacing: 2px;
   position: relative;
-  width: 350px;
+  width: 360px;
   height: 38px;
   margin: 5px auto 42px auto !important;
   border-radius: 0px !important;
@@ -299,7 +301,7 @@ hr.orange{
 
 .short input[type=text]{
   /*display: inline;*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Montserrat-Light" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   font-size: 18px;
   text-align: center;
   letter-spacing: 2px;
@@ -321,12 +323,12 @@ hr.orange{
 
   .short-inline input[type=text]{
   display: inline;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Montserrat-Light" , "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   font-size: 18px;
   text-align: center;
   letter-spacing: 2px;
   position: relative;
-  width: 100px;
+  width: 150px;
   height: 38px;
 /*  margin: 5px auto 42px auto !important;*/
   margin-bottom: 50px;
@@ -472,12 +474,35 @@ hr.orange{
 
 .signup select:hover{
    outline: none !important;
-   border: 1px solid #fcba6f;
+   border: 0px solid #fcba6f;
   border-radius: 16px !important;
- -webkit-box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .08) !important;
-          box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .08) !important;
+ -webkit-box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .1) !important;
+          box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .1) !important;
 }
 .signup select:focus{
+   outline: none !important;
+   border: 1px solid #fcba6f;
+  border-radius: 16px !important;
+ -webkit-box-shadow:  inset 0px 0px 20px 1px rgba(0, 0, 0, .0) !important;
+          box-shadow:  inset 0px 0px 20px 1px rgba(0, 0, 0, .0) !important;
+}
+
+.long-select select:hover{
+   outline: none !important;
+   border: 0px solid #fcba6f;
+  border-radius: 16px !important;
+ -webkit-box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .1) !important;
+          box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .1) !important;
+}
+
+.short-inline select:hover{
+   outline: none !important;
+   border: 0px solid #fcba6f;
+  border-radius: 16px !important;
+ -webkit-box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .1) !important;
+          box-shadow:  0px 0px 30px 8px rgba(0, 0, 0, .1) !important;
+}
+.long-select select:focus{
    outline: none !important;
    border: 1px solid #fcba6f;
   border-radius: 16px !important;
